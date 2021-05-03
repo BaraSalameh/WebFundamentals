@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="a required homework">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="c.css" type="text/css">
+
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                var id = $(this).attr("id");
+                if(id == 'cat0'){
+                    $(this).attr("src","images/ninja0.png");
+                    $(this).attr("id","ninja0");
+                }else if(id == 'ninja0'){
+                    $(this).attr("src","images/cat0.png");
+                    $(this).attr("id","cat0");
+                }
+
+                if(id == 'cat1'){
+                    $(this).attr("src","images/ninja1.png");
+                    $(this).attr("id","ninja1");
+                }else if(id == 'ninja1'){
+                    $(this).attr("src","images/cat1.png");
+                    $(this).attr("id","cat1");
+                }
+
+                if(id == 'cat2'){
+                    $(this).attr("src","images/ninja2.png");
+                    $(this).attr("id","ninja2");
+                }else if(id == 'ninja2'){
+                    $(this).attr("src","images/cat2.png");
+                    $(this).attr("id","cat2");
+                }
+
+                if(id == 'cat3'){
+                    $(this).attr("src","images/ninja3.png");
+                    $(this).attr("id","ninja3");
+                }else if(id == 'ninja3'){
+                    $(this).attr("src","images/cat3.png");
+                    $(this).attr("id","cat3");
+                }
+
+                if(id == 'cat4'){
+                    $(this).attr("src","images/ninja4.png");
+                    $(this).attr("id","ninja4");
+                }else if(id == 'ninja4'){
+                    $(this).attr("src","images/cat4.png");
+                    $(this).attr("id","cat4");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img id="cat0" src="images/cat0.png" alt="cat0">
+        <img id="ninja1" src="images/ninja1.png" alt="ninja1">
+        <img id="cat2" src="images/cat2.png" alt="cat2">
+        <img id="ninja3" src="images/ninja3.png" alt="ninja3">
+        <img id="cat4" src="images/cat4.png" alt="cat4">
+    </div>
+</body>
+</html>

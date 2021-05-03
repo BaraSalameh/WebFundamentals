@@ -1,0 +1,48 @@
+.container{
+    background-color: rgb(22, 16, 48);
+    width: 970px;
+    
+    padding: 10px;
+}
+.header{
+    background-color: rgb(230, 54, 54);
+    border-radius: 8px;
+}
+h1{
+    padding: 10px;
+    color: white;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.left-div{
+    background-color: rgb(69, 161, 161);
+    width: 230px;
+    height: 30%;
+    border-radius: 8px;
+    padding: 10px;
+}
+.right-div{
+    background-color: rgba(27, 19, 19, 0.884);
+    width: 680px;
+    border-radius: 8px;
+    padding: 10px;
+}
+h3{
+    color: white;
+    padding-left: 10px;
+}
+p{
+    color: white;
+    font-size: 80%;
+}
+.footer{
+    background-color: rgb(102, 98, 98);
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+span{
+    color: slateblue;
+}

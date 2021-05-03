@@ -1,0 +1,154 @@
+.container{
+    width: 970px;
+}
+.header{
+    background-color:#245076;
+    
+}
+.header-first-line{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: bottom;
+}
+.header-right a{
+    color: #c4aa09;
+}
+img{
+    width: 385px;
+    
+}
+#goBtn{
+    background-color: #245076;
+    font-size: 0.9em;
+}
+#search{
+    color: #444;
+}
+.search-div{
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    
+    
+}
+.header-right{
+    width: 250px;
+    height: 180px;
+}
+
+.header-right a,p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-second-line{
+    margin-right: 50px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #417cad;
+    padding:10px;
+    border-radius: 8px;
+}
+.header-second-line a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    margin: 1px;
+    text-align: center;
+}
+.ul-div{
+    width: 300px;
+    
+}
+
+.ul-div a{
+    color: #cbd6df;
+}
+.header-third-line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: top;
+}
+.header-right-div{
+    width: 580px;
+}
+.header-right-div p{
+    color: #cbd6df;
+    
+    width: 500px;
+    text-align: center;
+}
+.header-right-div h3{
+    color:#e5c437;
+    margin: 3px;
+}
+#different-h3{
+    color: #e8edf1;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    vertical-align:top;
+}
+
+.main-right{
+    width: 400px;
+    border-top: 5px solid #73a7d5;
+    
+}
+.main-left{
+    width: 400px;
+    border-top: 5px solid #73a7d5;
+    margin-right: 20px;
+    margin-top: -40px;
+}
+.main-left h3,p,ul,li{
+    text-align: center;
+}
+.main-right h3,p,ul,li{
+    text-align: center;
+}
+.main-left li{
+    color: #79abd6;
+}
+.main-right li,span{
+    color: #79abd6;
+}
+.footer{
+    background-color: #3170a6;
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.improvedClass{
+    background-color:#e5c437 ;
+    
+    border-top: 5px solid black;
+    
+    margin-top: 10px;
+}
+
+#styleMe{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}

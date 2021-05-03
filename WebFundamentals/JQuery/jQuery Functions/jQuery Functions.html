@@ -1,0 +1,157 @@
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <meta name="description" content="A required homework">
+    <link rel="stylesheet" href="c.css" type="text/css">
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#clickAlert").click(function() {
+                alert("This is a modification on a previous homework!");
+            });
+            $("#hideLogo").click(function() {
+                $("img").hide();
+            })
+            $("#showLogo").click(function() {
+                $("img").show();
+            });
+            $("#toggle").click(function() {
+                $("img").toggle();
+            });
+
+            $("#slideDown").click(function() {
+                $(".ul-div").slideDown("slow");
+            });
+
+            $("#slideUp").click(function() {
+                $(".ul-div").slideUp("slow");
+            });
+
+            $("#slideToggle").click(function() {
+                $(".ul-div").slideToggle();
+            });
+            $("#fadeIn").click(function() {
+                $(".search-div").fadeIn();
+            });
+            $("#fadeOut").click(function() {
+                $(".search-div").fadeOut();
+            });
+            $("#addClass").click(function() {
+                $(".footer").addClass("improvedClass");
+            });
+
+            
+            $("#before").click(function() {
+                $("#here").before("<p>JQuery is amazing...</p>");
+            });
+
+            $("#after").click(function(){
+                $(".orHere").after("<h3 class='header-right-div'>I told you, it's amazing ;)</h3>");
+            });
+
+            $("#append").click(function(){
+                $(".orHere").append("<h3 class='header-right-div'>Wonderfull</h3>")
+            });
+
+            $("#html").click(function(){
+                $("#newPara").html("<p id='styleMe'>html method replace any thing to put text instead with an advantage using html tags!!!</p>");
+            });
+
+            $("#attr").click(function(){
+                $("img").attr("src","images/jquery.jpg");
+                $("img").attr("alt","jquery");
+                $("img").show();
+            });
+
+            $("#value").click(function(){
+                var btnValue = $("#goBtn").val();
+                $("#goBtn").val("Where to go :/");
+                alert("the previous value for the search button was\t"+btnValue+"\nLook at the new value for the search button on the top right :D");
+            });
+
+            
+            $("#Text").click(function(){
+                $("#styleMe").text("JQuery!, What a beautifull library");
+            });
+            
+            
+            
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-first-line">
+                <img src="images/python.png" alt="Python Logo">
+                <div class="header-right">
+                    <p>Text Size:<a href="#">Normal </a>|<a href="#"> Large</a></p>
+                    <div class="search-div">
+                        <input type="text" name="search" id="search" placeholder="Search">
+                        <input type="button" id="goBtn" value="GO">
+                    </div>
+                </div>
+
+            </div>
+            <div class="header-second-line">
+                <a id="hideLogo" href="#">Hide</a>
+                <a id="showLogo" href="#">Show</a>
+                <a id="toggle" href="#">Hide/Show</a>
+                <a id="slideUp" href="#">Slide up</a>
+                <a id="slideDown" href="#">Slide down</a>
+                <a id="slideToggle" href="#">Slide up/down</a>
+            </div>
+            <div class="header-third-line">
+                <div class="ul-div">
+                    <ul>
+                        <li><h3><a id="clickAlert" href="#">Click</a></h3></li>
+                        <li><h3><a id="fadeOut" href="#">Fade Out</a></h3></li>
+                        <li><h3><a id="fadeIn" href="#">Fade In</a></h3></li>
+                        <li><h3><a id="addClass" href="#">Add Class</a></h3></li>
+                        <li><h3><a id="before" href="#">Pefore</a></h3></li>
+                        <li><h3><a id="after" href="#">After</a></h3></li>
+                        <li><h3><a id="append" href="#">Append</a></h3></li>
+                        <li><h3><a id="html" href="#">HTML</a></h3></li>
+                        <li><h3><a id="attr" href="#">ATTR</a></h3></li>
+                        <li><h3><a id="value" href="#">Val</a></h3></li>
+                        <li><h3><a id="Text" href="#">Text</a></h3></li>
+                    </ul>
+                </div>
+                <div class="header-right-div">
+                    <p id="styleMe"></p>
+                    <p id="newPara">
+                        First appearing in 1991,Python is a general-purpuse, high-level, interpretted programming 
+                        language whose design focus emphaizes code readability. Whether for processing/analyzing 
+                        data to powering many well-known applications, Python is not only a great language for new
+                        programmers but also power enough for seasoned developers building whatever they can think 
+                        of.
+                    </p>
+                    <h3 id="here">Beautiful is beter than ugly;</h3>
+                    <h3>Explict is beter than impli;ct</h3>
+                    <h3>Simple is beter than complex;</h3>
+                    <h3>Complex is beter than complecated;</h3>
+                    <h3>Readability counts;</h3>
+                    <h3 class="orHere" id="different-h3">The zin of python</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-top">
+                <h3>Help and General Contact</h3>
+                <h3>Diversity Initiative</h3>
+                <h3>Submit Website Bugs</h3>
+            </div>
+            <p>Copyright &copy;2001-2016.</p>
+        </div>
+    </div>
+</body>
+</html>

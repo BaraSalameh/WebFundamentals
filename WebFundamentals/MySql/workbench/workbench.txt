@@ -1,0 +1,41 @@
+1- Create
+CREATE TABLE departments(
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(255) NULL,
+	address VARCHAR(255),
+	PRIMARY KEY(id));
+
+CREATE TABLE employees(
+	id INT NOT NULL AUTO_INCREMENT,
+	first_name VARCHAR(255) NULL,
+	last_name VARCHAR(255) NULL,
+	email VARCHAR(255), NULL,
+	salary INT NULL,
+	department_id INT NOT NULL,
+	PRIMARY KEY(id),
+	FOREIGN KEY(department_id));
+
+
+2- iNSERT
+->	INSERT INTO departments(name,address)
+	VALUES('WEB DEVELOPMENT','ABUSHKHEDEM');
+
+->	INSERT INTO employees (first_name,last_name,email,salary,department_id)
+	VALUES('bara','salameh','barasalameh90@gmail.com',0000,1);
+
+3- Read
+-> 	select * from employees
+
+->	select concat(first_name," ",last_name) as 'Full Name',name as 'Department Name' from employees
+	join departments on employees.department_id = departments.id
+	where departments.id = 1;
+
+4- update
+->	update employees
+	set last_name = 'ibrahem'
+	where id = 1;
+
+4- Delete
+->	delete from employees
+	where id = 1;
+

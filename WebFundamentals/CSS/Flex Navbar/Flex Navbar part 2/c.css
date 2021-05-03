@@ -1,0 +1,24 @@
+.nav{
+    background-color: #7496d6;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 100px;
+    margin: 20px;
+}
+img{
+    height: 50px;
+    width: 30px;
+}
+
+h1{
+    color: white;
+}
+li{
+    display: inline;
+}
+a{
+    color: white;
+}

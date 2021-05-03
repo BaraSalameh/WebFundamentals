@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover InOut</title>
+
+    <link rel="stylesheet" href="c.css" type="text/css">
+    <script src="jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('img').hover(function(){
+                $(this).attr("src","images/hover.jpg");
+                $(this).attr("alt","nature");
+                $(this).css({"width":"250px"});
+                $(this).css({"height":"200px"});
+            },
+            function(){
+                $(this).attr("src","images/original.PNG");
+                $(this).attr("alt","codingDojoLogo");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/original.PNG" alt="codingDojoLogo">
+        <img src="images/original.PNG" alt="codingDojoLogo">
+        <img src="images/original.PNG" alt="codingDojoLogo">
+        <img src="images/original.PNG" alt="codingDojoLogo">
+    </div>
+</body>
+</html>
